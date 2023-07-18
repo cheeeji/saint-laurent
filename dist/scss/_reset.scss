@@ -288,11 +288,10 @@ legend {
     content: "";
   }
 }
-body {
-  background: url(../../images/m-main.jpg) 0 0 / 100% auto no-repeat;
-  background-color: #fff;
-  // background-size: 0 0 / 100% contain;
-  .wrap {
-    opacity: 0.7px;
-  }
-}
+// body {
+//   background: url(../../images/m-main.jpg) no-repeat 0 0/ 100% auto;
+//   // background-size: 0 0 / 100% contain;
+//   .wrap {
+//     opacity: 0.7;
+//   }
+// }

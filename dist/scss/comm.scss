@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "reset";
 @import "fonts", "reset", "main", "contents";
 
 // .wrap {
@@ -28,8 +27,6 @@
 }
 
 #header {
-  border-bottom: 1px solid #000;
-
   #logo img {
     height: 21px;
     object-fit: contain;
@@ -56,6 +53,7 @@
       font-family: "Font Awesome 6 free";
       font-weight: 900;
       padding: 5px;
+      color: #fff;
     }
   }
   .lst-util2 {
@@ -64,9 +62,19 @@
       font-family: "Font Awesome 6 free";
       font-weight: 500;
       padding: 5px;
+      color: #fff;
     }
   }
 }
-body {
-  background: url();
+.wrap {
+  position: relative;
+}
+#main {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+
+  height: 1176px;
+  width: 100%;
+  background: url(../../images/Desktop_Header.jpg) 0 0 / 100% no-repeat;
 }

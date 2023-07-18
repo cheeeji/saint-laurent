@@ -1,5 +1,23 @@
-@charset "UFT-8";
-@import "mixin", "variables", "fonts", "reset", "main", "contents";
+@charset "UTF-8";
+@import "reset";
+@import "fonts", "reset", "main", "contents";
+
+// .wrap {
+//   width: 1200px;
+//   margin: 0 auto;
+
+//   header {
+//     height: 100px;
+//     background: rgb(255, 241, 216);
+//   }
+// }
+
+// .wrap .slide {
+//   height: 300px;
+//   background: blue;
+// }
+
+// @import  "main", "contents";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -9,32 +27,46 @@
   padding: 0 4%;
 }
 
-// header
 #header {
   border-bottom: 1px solid #000;
+
+  #logo img {
+    height: 21px;
+    object-fit: contain;
+  }
+
   .inner {
+    // position: fixed;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 70px;
   }
-  .lst-util {
-    display: flex;
-    .btn-g {
-      width: 40px;
-      height: 70px;
-      &::before {
-        font-size: 20px;
-        font-family: "Font Awesome 6 Free";
-      }
-    }
-    .btn-search::before {
-      content: "\f002";
-      font-weight: 900;
-    }
-    .btn-burger::before {
-      content: "\f007";
-      font-weight: 400;
+  .btn-g {
+    height: 40px;
+    width: 70px;
+    &::before {
+      font-size: 20px;
+      font-family: "Font Awesome 6 free";
     }
   }
+  .lst-util {
+    .btn-search::before {
+      content: "\f0c9";
+      font-family: "Font Awesome 6 free";
+      font-weight: 900;
+      padding: 5px;
+    }
+  }
+  .lst-util2 {
+    .btn-ham::before {
+      content: "\f007";
+      font-family: "Font Awesome 6 free";
+      font-weight: 500;
+      padding: 5px;
+    }
+  }
+}
+body {
+  background: url();
 }

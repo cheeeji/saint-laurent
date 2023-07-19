@@ -312,4 +312,7 @@ legend {
   height: 1176px;
   width: 100%;
   background: url("../../images/main/Header.jpg") 50% 50%/cover no-repeat;
+}
+#main .main-1 {
+  margin-top: 50px;
 }/*# sourceMappingURL=comm.css.map */

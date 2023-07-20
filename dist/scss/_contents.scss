@@ -1,3 +1,45 @@
 .contents {
   height: 300px;
 }
+
+#main {
+  .tit {
+    margin-top: 20px;
+    li {
+      display: inline-block;
+      font-size: 20px;
+      padding-right: 10px;
+    }
+  }
+  .list {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      // align-items: flex-start;
+      // gap: 50px;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

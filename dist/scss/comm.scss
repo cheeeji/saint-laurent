@@ -53,7 +53,7 @@
       font-family: "Font Awesome 6 free";
       font-weight: 900;
       padding: 5px;
-      color: #fff;
+      color: #000000;
     }
   }
   .lst-util2 {
@@ -62,23 +62,110 @@
       font-family: "Font Awesome 6 free";
       font-weight: 500;
       padding: 5px;
-      color: #fff;
+      color: #000000;
     }
   }
 }
-.wrap {
+#footer {
   position: relative;
-}
-#main {
-  position: absolute;
-  top: 0px;
-  z-index: -1;
-  height: 1176px;
-  width: 100%;
-  background: url("../../images/main/Header.jpg") 50% 50% / cover no-repeat;
-  .main-1 {
-    width: 100%;
-    height:;
-    margin-top: 50px;
+
+  .lst-foot {
+    > li {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 1px solid #000;
+    }
   }
+  .lst-sns {
+    display: flex;
+    a {
+      display: flex;
+      align-items: center;
+      margin: 5px;
+    }
+  }
+
+  .footerlogo {
+    padding: 20px 20px;
+  }
+  .footerlogo img {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .material-icons-outlined {
+    position: absolute;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+  .iconbox {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+  }
+  .fp {
+    position: relative;
+    padding: 5px;
+  }
+  .footerbox {
+    position: relative;
+    padding: 5px;
+  }
+
+  .ocean {
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin-bottom: 40px;
+    padding: 0 0;
+    height: 50px;
+    top: 50%;
+    margin-top: 80px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+  .wave {
+    background: url(../../images/contents/footer/Untitled-2.png) repeat-x;
+    // background-size: auto 100%;
+    position: absolute;
+    z-index: 100;
+    top: 13px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }

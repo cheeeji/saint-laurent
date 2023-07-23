@@ -1,6 +1,3 @@
-.contents {
-}
-
 #main {
   .tit {
     margin-top: 20px;
@@ -52,51 +49,61 @@
       height: 7px;
     }
     .box1 {
-      background: #000;
+      background: #282b25;
       margin-right: 6px;
     }
     .box2 {
       background: #a3873f;
+      margin-right: 6px;
     }
     .box3 {
-      background: #625918;
-    }
+      background: #0d181a;
+      margin-right: 6px;
     .box4 {
-      background: #2e171f;
+      background: #625918;
+      margin-right: 6px;
     }
     .box5 {
+      background: #2e171f;
+      margin-right: 6px;      
+    }
+    .box6 {
       background: #230d10;
       margin-right: 6px;
     }
-    .box6 {
-      background: #edd28e;
-    }
     .box7 {
-      background: #cbb289;
+      background: #edd28e;
+      margin-right: 6px;
     }
     .box8 {
-      background: #230d10;
+      background: #cbb289;
       margin-right: 6px;
     }
     .box9 {
+      background: #230d10;
+      margin-right: 6px;
+    }
+    .box10 {
       background: #edd28e;
+      margin-right: 6px;
     }
   }
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

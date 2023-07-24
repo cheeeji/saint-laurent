@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "fonts", "reset", "main", "contents";
+@import "variables", "mixin", "fonts", "reset", "main", "contents";
 
 // .wrap {
 //   width: 1200px;
@@ -27,9 +27,23 @@
 }
 
 #header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 60px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
   #logo img {
     height: 21px;
     object-fit: contain;
+  }
+
+  .material-symbols-outlined {
+    // position: absolute;
+    display: inline-block;
+    font-size: 30px;
   }
 
   .inner {
@@ -38,6 +52,7 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    width: 100%;
   }
   .btn-g {
     height: 40px;
@@ -64,6 +79,79 @@
       padding: 5px;
       color: #000000;
     }
+  }
+}
+
+.gnb-wrap {
+  .input-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    &:checked {
+      // input이 선택됬을 때
+      & + label {
+        .bar {
+          background: $txtDefault;
+          &:nth-child(2) {
+            transform: rotate(45deg) translate(4px, 4px);
+          }
+          &:nth-child(3) {
+            // display: none;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            transform: rotate(-45deg) translate(6px, -6px);
+          }
+        }
+      }
+      & ~ #gnb {
+        left: 0;
+      }
+    }
+  }
+
+  .label-burger {
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: $headerHight;
+    .bar {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $txtDefault;
+      transition: all 0.3s;
+      // display none, block은 트렌지션 적용x
+      // 2개 이상 적용시 all -> 위치값 다시 적용
+    }
+    span {
+      &:nth-child(3) {
+        margin: 5px 0;
+      }
+    }
+  }
+  #gnb {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    // left: 100%;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    background: $prim3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s;
   }
 }
 
@@ -123,11 +211,7 @@ body {
     height: 20px;
     flex-shrink: 0;
   }
-  .material-icons-outlined {
-    position: absolute;
-    display: inline-block;
-    font-size: 0.9rem;
-  }
+
   .iconbox {
     display: flex;
     flex-direction: row-reverse;

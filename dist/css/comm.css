@@ -259,19 +259,6 @@ legend {
   height: 100px;
 }
 
-#header {
-  position: relative;
-  z-index: 1000;
-}
-#header #logo {
-  z-index: 1100;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1100;
-  transform: translate(-50%, -50%);
-}
-
 #main .tit {
   margin-top: 20px;
 }
@@ -320,71 +307,53 @@ legend {
   height: 7px;
 }
 #main .box-wrap .box1 {
-  background: #000;
+  background: #394230;
   margin-right: 6px;
 }
 #main .box-wrap .box2 {
-  background: #424735;
+  background: #334346;
   margin-right: 6px;
 }
 #main .box-wrap .box3 {
-  background: #c085a9;
+  background: #c287b0;
+  margin-right: 6px;
 }
 #main .box-wrap .box4 {
-  background: #99792a;
+  background: #a1942b;
+  margin-right: 6px;
 }
 #main .box-wrap .box5 {
-  background: #49191f;
-  margin-right: 6px;
+  background: #000000;
 }
 #main .box-wrap .box6 {
-  background: #edd28e;
-}
-#main .box-wrap .box7 {
-  background: #cbb289;
+  background: #4b2227;
   margin-right: 6px;
 }
-
-.swiper {
+#main .box-wrap .box7 {
+  background: #e2c98e;
+}
+#main .box-wrap .box8 {
+  background: #ac946f;
+}
+#main .box-wrap .box9 {
+  background: #000000;
+  margin-right: 6px;
+}
+#main .swiper {
   width: 100%;
   height: 100%;
 }
-
-.swiper-slide {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+#main .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
 }
-.swiper-slide::before {
-  content: "";
+#main .swiper-slide img {
   display: block;
-  height: 0;
-  padding-top: 150%;
-}
-
-.swiper-slide img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0 60%;
-     object-position: 0 60%;
-  display: block;
-}
-
-.list3img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 80%;
-     object-position: 0 80%;
 }
 
 .container {
@@ -396,10 +365,21 @@ legend {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
   padding: 10px;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
+}
+#header #logo {
+  position: absolute;
+  z-index: 1100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #header #logo img {
   height: 21px;

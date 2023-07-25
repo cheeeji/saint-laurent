@@ -429,7 +429,7 @@ legend {
   opacity: 0;
 }
 .gnb-wrap .input-burger:checked + label .bar {
-  background: #111;
+  background: #fff;
 }
 .gnb-wrap .input-burger:checked + label .bar:nth-child(2) {
   transform: rotate(45deg) translate(4px, 4px);
@@ -471,7 +471,7 @@ legend {
   bottom: 0;
   width: 100%;
   padding: 50px;
-  background: #093e7e;
+  background: #6b5454;
   display: flex;
   justify-content: center;
   align-items: center;

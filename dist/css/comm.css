@@ -344,16 +344,33 @@ legend {
   height: 100%;
 }
 #main .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
   text-align: center;
   font-size: 18px;
   background: #fff;
 }
+#main .swiper-slide::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 160%;
+}
 #main .swiper-slide img {
   display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  transition: transform 0.3s;
 }
 
 .container {

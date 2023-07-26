@@ -47,6 +47,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   #logo img {
     height: 21px;
     object-fit: contain;
@@ -93,7 +94,6 @@
     }
   }
 }
-
 .gnb-wrap {
   .input-burger {
     position: absolute;
@@ -164,6 +164,9 @@
     justify-content: center;
     align-items: center;
     transition: right 0.3s;
+    li {
+      color: #eeeeee;
+    }
   }
 }
 

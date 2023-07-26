@@ -477,6 +477,9 @@ legend {
   align-items: center;
   transition: right 0.3s;
 }
+.gnb-wrap #gnb li {
+  color: #eeeeee;
+}
 
 html,
 body {

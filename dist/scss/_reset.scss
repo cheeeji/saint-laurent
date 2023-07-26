@@ -137,6 +137,10 @@ body {
   color: #111;
 }
 
+.depth1 li {
+  color: $w;
+}
+
 /* desktop */
 @media screen and (min-width: 1280px) {
   body {

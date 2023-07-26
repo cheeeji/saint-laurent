@@ -117,6 +117,10 @@ body {
   color: #111;
 }
 
+.depth1 li {
+  color: #fff;
+}
+
 /* desktop */
 @media screen and (min-width: 1280px) {
   body {
@@ -393,7 +397,6 @@ legend {
 }
 #header #logo {
   position: absolute;
-  z-index: 1100;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -421,20 +424,6 @@ legend {
 #header .btn-g::before {
   font-size: 20px;
   font-family: "Font Awesome 6 free";
-}
-#header .lst-util .btn-search::before {
-  content: "\f0c9";
-  font-family: "Font Awesome 6 free";
-  font-weight: 900;
-  padding: 5px;
-  color: #000000;
-}
-#header .lst-util2 .btn-ham::before {
-  content: "\f007";
-  font-family: "Font Awesome 6 free";
-  font-weight: 500;
-  padding: 5px;
-  color: #000000;
 }
 
 .gnb-wrap .input-burger {
@@ -487,15 +476,34 @@ legend {
   left: -100%;
   bottom: 0;
   width: 100%;
-  padding: 50px;
-  background: #6b5454;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 125px;
   transition: right 0.3s;
 }
+.gnb-wrap #gnb .gnb-logo img {
+  width: 250px;
+  margin-bottom: 70px;
+}
+.gnb-wrap #gnb .gnb-logo img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
 .gnb-wrap #gnb li {
-  color: #eeeeee;
+  color: #ffffff;
+  line-height: 30px;
+}
+.gnb-wrap #gnb a {
+  color: #fff;
 }
 
 html,

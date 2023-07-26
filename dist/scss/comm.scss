@@ -28,6 +28,7 @@
 
 #header {
   display: flex;
+  // position: fixed;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -42,7 +43,7 @@
 
   #logo {
     position: absolute;
-    z-index: 1100;
+    // z-index: 1100;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -73,24 +74,6 @@
     &::before {
       font-size: 20px;
       font-family: "Font Awesome 6 free";
-    }
-  }
-  .lst-util {
-    .btn-search::before {
-      content: "\f0c9";
-      font-family: "Font Awesome 6 free";
-      font-weight: 900;
-      padding: 5px;
-      color: #000000;
-    }
-  }
-  .lst-util2 {
-    .btn-ham::before {
-      content: "\f007";
-      font-family: "Font Awesome 6 free";
-      font-weight: 500;
-      padding: 5px;
-      color: #000000;
     }
   }
 }
@@ -155,17 +138,36 @@
     position: fixed;
     top: 0;
     left: -100%;
-    // left: 100%;
     bottom: 0;
     width: 100%;
-    padding: 50px;
-    background: #6b5454;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 125px;
     transition: right 0.3s;
+    .gnb-logo img {
+      width: 250px;
+      margin-bottom: 70px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
     li {
-      color: #eeeeee;
+      color: #ffffff;
+      line-height: 30px;
+    }
+    a {
+      color: $w;
     }
   }
 }

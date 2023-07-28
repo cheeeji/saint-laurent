@@ -428,6 +428,7 @@ legend {
   padding: 10px 0px;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
+  background: #fff;
 }
 #header .header-wrap #logo {
   position: absolute;

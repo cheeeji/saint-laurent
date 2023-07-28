@@ -59,8 +59,9 @@
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./dist/js/comm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./dist/js/include.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
     <div id="u-skip">
@@ -68,100 +69,9 @@
       <a href="#main"><span>컨텐츠 바로가기</span></a>
       <a href="#footer"><span>풋터 바로가기</span></a>
     </div>
-    <div class="wrap itemlst-wrap">
-      <header id="header" class="container">
-        <div class="header-wrap">
-          <div class="inner">
-            <h1 id="logo">
-              <a href="#">
-                <img src="./images/comm/logo.png" alt="saintlaurent" />
-              </a>
-            </h1>
-            <nav class="gnb-wrap">
-              <!-- 링크 연결없이 스크립트 처리 -->
-              <!-- <a href="javascript:void(0)"
-                ><span class="material-icons"> menu </span></a
-              > -->
-              <input
-                type="checkbox"
-                name="gnbNav"
-                id="gnbNav"
-                class="input-burger"
-              />
-              <!-- checked 없는 것이 기본값이라 삭제 -->
-              <label for="gnbNav" class="label-burger">
-                <span class="blind">전체 메뉴 보기</span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </label>
-              <div id="gnb">
-                <div class="gnb-wrap">
-                  <div class="gnb-logo">
-                    <a href="#">
-                      <img
-                        src="./images/comm/logo-white.png"
-                        alt="saintlaurent"
-                      />
-                    </a>
-                  </div>
-                  <ul class="depth1">
-                    <li>
-                      <a href="#">여성의류</a>
-                      <ul class="depth2">
-                        <li>
-                          <a href="#">NEW - FALL 23</a>
-                        </li>
-                        <li>
-                          <a href="#">NEW - SUMMER 23</a>
-                        </li>
-                      </ul>
-                      <a href="#">남성의류</a>
-                      <ul class="depth2">
-                        <li>
-                          <a href="#">NEW - FALL WINTER23</a>
-                        </li>
-                        <li>
-                          <a href="#">NEW - SPRING SUMMER 23</a>
-                        </li>
-                      </ul>
-                      <a label-burgerhref="#">about us </a>
-                      <ul class="depth2">
-                        <li>
-                          <a href="#">NEW - FALL WINTER23</a>
-                        </li>
-                        <li>
-                          <a href="#">NEW - SPRING SUMMER 23</a>
-                        </li>
-                      </ul>
-                      <a href="#">about us </a>
-                      <ul class="depth2">
-                        <li>
-                          <a href="#">NEW - FALL WINTER23</a>
-                        </li>
-                        <li>
-                          <a href="#">NEW - SPRING SUMMER 23</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-            <div class="util">
-              <ul class="lst-util">
-                <li>
-                  <a href="#" class="btn-g btn-mypage">
-                    <span class="material-symbols-outlined"> person </span></a
-                  >
-                  <!-- <span class="blind">마이페이지</span> -->
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
 
+    <div class="wrap itemlst-wrap">
+      <header data-include-path="./outline/header-w.html"></header>
       <main id="main" class="container itemlist">
         <div class="slide-wrap slide-name">
           <section class="contents">
@@ -607,100 +517,6 @@
           </section>
         </div>
       </main>
-
-      <!-- footer -->
-      <footer id="footer">
-        <div class="ocean">
-          <div class="wave"></div>
-        </div>
-        <div class="container">
-          <ul class="lst-foot foot-info">
-            <li>
-              <span
-                >SHIPPING TO : REPUBLIC OF KOREA
-                <span class="material-icons-outlined arrow-icon">
-                  chevron_right
-                </span>
-              </span>
-            </li>
-            <li>
-              <span
-                >LANGUAGE : ENGLISH<span class="material-icons-outlined">
-                  chevron_right
-                </span></span
-              >
-            </li>
-            <li>
-              <span
-                >SOCIAL MEDIA
-                <span class="material-icons-outlined">
-                  chevron_right
-                </span></span
-              >
-              <!-- sns 배경으로 넣기 -->
-              <ul class="lst-sns">
-                <li class="iconbox">
-                  <a href="https://www.facebook.com/ysl/?locale=ko_KR">
-                    <img
-                      src="./images/comm/footer/Facebook_1_.png"
-                      alt="SAINT LAURENT Facebook"
-                    />
-                  </a>
-                </li>
-                <li class="iconbox">
-                  <a href="https://www.instagram.com/ysl/">
-                    <img
-                      src="./images/comm/footer/Instagram_1_.png"
-                      alt="SAINT LAURENT Instagram"
-                    />
-                  </a>
-                </li>
-                <li class="iconbox">
-                  <a href="https://www.youtube.com/@yvessaintlaurent">
-                    <img
-                      src="./images/comm/footer/YouTube_1_.png"
-                      alt="SAINT LAURENT Youtube"
-                    />
-                  </a>
-                </li>
-                <li class="iconbox">
-                  <a href="https://www.ysl.com/ko-kr">
-                    <img
-                      src="./images/comm/footer/Twitter_1_.png"
-                      alt="SAINT LAURENT Twitter"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span
-                >NEWSLETTER<span class="material-icons-outlined">
-                  chevron_right
-                </span></span
-              >
-            </li>
-            <li>
-              BY CONTACTING CUSTOMER SERVICE, YOU CONSENT TO THE TRANSFER OF
-              YOUR PERSONAL INFORMATION ABROAD.
-            </li>
-            <li>
-              <!--
-                  주소 : address , 전화번: tel, 이메일: mailto
-                 -->
-              YVES SAINT LAURENT KOREA LLC | BUSINESS REGISTRATION NO.
-              211-88-87468 ADDRESS OF THE COMPANY : 13F, 517, YEONGDONG-DAERO,
-              GANGNAM-GU, SEOUL, REPUBLIC OF KOREA | LEGAL NOTICE NAME OF
-              REPRESENTATIVE AS RECORDED IN THE BUSINESS REGISTRATION
-              CERTIFICATE : HIROFUMI TAMBO TELECOMMUNICATION REGISTRATION NUMBER
-              : 2022-서울강남-06159 ORGANIZATION WHO ISSUED TELECOMMUNICAITON
-              REGISTRATION NUMBER: SEOUL GANGNAM GU OFFICE HOSTING SERVICE :
-              SALESFORCE <br />
-              CUSTOMER CENTER : + 82 2-6105-2228
-            </li>
-          </ul>
-        </div>
-      </footer>
     </div>
   </body>
 </html>

@@ -1,26 +1,6 @@
 @charset "UTF-8";
 @import "variables", "mixin", "fonts", "reset", "main", "contents", "goods";
 
-// .wrap {
-//   width: 1200px;
-//   margin: 0 auto;
-
-//   header {
-//     height: 100px;
-//     background: rgb(255, 241, 216);
-//   }
-// }
-
-// .wrap .slide {
-//   height: 300px;
-//   background: blue;
-// }
-
-// @import  "main", "contents";
-
-// comm.scss -
-// 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
-
 // 공통
 .container {
   padding: 0 4%;
@@ -80,6 +60,7 @@
     .btn-g {
       height: 40px;
       width: 70px;
+      background: $w;
       &::before {
         font-size: 20px;
         font-family: "Font Awesome 6 free";
@@ -98,7 +79,7 @@
     height: 100%;
     z-index: 1000;
     padding: 10px 0px;
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
     box-sizing: border-box;
 
     #logo {
@@ -107,6 +88,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      height: 70px;
+      display: flex;
+      align-items: center;
     }
 
     #logo img {
@@ -130,8 +114,9 @@
       width: 100%;
     }
     .btn-g {
-      height: 40px;
-      width: 70px;
+      display: flex;
+      height: 70px;
+      align-items: center;
       &::before {
         font-size: 20px;
         font-family: "Font Awesome 6 free";
@@ -153,6 +138,7 @@
         .bar {
           background: $w;
           &:nth-child(2) {
+            background: $w;
             transform: rotate(45deg) translate(4px, 4px);
           }
           &:nth-child(3) {
@@ -160,6 +146,22 @@
             opacity: 0;
           }
           &:nth-child(4) {
+            background: $w;
+            transform: rotate(-45deg) translate(6px, -6px);
+          }
+        }
+        .bar-w {
+          background: $w;
+          &:nth-child(2) {
+            background: $w;
+            transform: rotate(45deg) translate(4px, 4px);
+          }
+          &:nth-child(3) {
+            // display: none;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            background: $w;
             transform: rotate(-45deg) translate(6px, -6px);
           }
         }
@@ -180,11 +182,20 @@
     flex-direction: column;
     width: 40px;
     height: $headerHight;
-    .bar {
+    .bar-b {
       display: block;
       width: 26px;
       height: 2px;
-      background: $txtDefault;
+      background: $w;
+      transition: all 0.3s;
+      // display none, block은 트렌지션 적용x
+      // 2개 이상 적용시 all -> 위치값 다시 적용
+    }
+    .bar-w {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $b;
       transition: all 0.3s;
       // display none, block은 트렌지션 적용x
       // 2개 이상 적용시 all -> 위치값 다시 적용
@@ -212,12 +223,14 @@
     // margin-left: 15px;
     // padding-left: 18%;
     transition: right 0.3s;
+    padding-left: 22.8%;
     .gnb-wrap {
       margin-left: 15%;
     }
     .gnb-logo img {
-      width: 250px;
+      width: 204.67px;
       margin-bottom: 70px;
+      padding-top: 6px;
       &::after {
         content: "";
         position: absolute;
